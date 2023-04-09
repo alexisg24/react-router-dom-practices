@@ -4,6 +4,7 @@ import { Menu } from './Components/Menu'
 import { HomePage } from './Components/HomePage'
 import { Footer } from './Components/Footer'
 import { BlogPage } from './Components/BlogPage'
+import { BlogContent } from './Components/BlogContent'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/blog" element={<BlogPage/>} />
+          <Route path="/blog/:path" element={<BlogContent/>} />
           <Route path="/profile" element={<ProfilePage/>} />
           <Route path="*" element={<p>Not Found</p>} />
         </Routes>

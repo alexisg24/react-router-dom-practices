@@ -30,6 +30,6 @@ const Menu = () =>{
     )
 }
 
-const routes = [{path: '/', content: 'Home'}, {path: '/profile', content: 'Profile'}, {path: '/Blog', content: 'Blog'}];
+const routes = [{path: '/', content: 'Home'}, {path: '/profile', content: 'Profile'}, {path: '/blog', content: 'Blog'}];
 
 export { Menu }
