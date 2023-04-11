@@ -7,7 +7,7 @@ const BlogContent = () =>{
     const { path } = useParams();
     const post = blogData.find(post => post.path === path)
     const returnToBlog = () =>{
-        return navigation(-1)
+        return navigation(-1, {replace: true})
     }
     return (
         <>
