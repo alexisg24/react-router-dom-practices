@@ -1,1 +1,1 @@
-export const adminList = ['Irisval', 'RetaxMaster', 'Freddier'];
+export const adminList = ['Irisval', 'RetaxMaster', 'Freddier']
