@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { blogData } from '../data/blogData'
 
-const BlogPage = () => {
+const BlogPage = ({ blogData }) => {
   return (
     <>
       <h1>BlogPage</h1>

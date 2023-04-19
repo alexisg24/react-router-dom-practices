@@ -42,9 +42,10 @@ const Menu = () => {
 
 const routes = [
   { path: '/', content: 'Home', private: false },
-  { path: '/profile', content: 'Profile', private: true },
+  { path: '/add', content: 'Add Blog', private: true },
   { path: '/blog', content: 'Blog', private: false },
   { path: '/login', content: 'Login', private: false },
+  { path: '/profile', content: 'Profile', private: true },
   { path: '/logout', content: 'Logout', private: true }
 ]
 
