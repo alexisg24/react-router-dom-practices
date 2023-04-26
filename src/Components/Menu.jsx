@@ -11,7 +11,7 @@ const Menu = () => {
         {routes.map(route => {
           if (
             (route.private && !auth.user?.username) ||
-                        (auth.user?.username && route.path === '/login')
+            (auth.user?.username && route.path === '/login')
           ) return null
           return (
             <li key={route.path}>

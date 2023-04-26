@@ -8,10 +8,10 @@ const AuthProvider = ({ children }) => {
   const navigate = useNavigate()
   const [user, setUser] = React.useState(null)
 
-  const login = ({ username }) => {
+  const login = ({ username, from }) => {
     const isAdmin = adminList.find(name => name === username)
     setUser({ username, isAdmin })
-    navigate('/profile')
+    navigate(from, { replace: true })
   }
 
   const logOut = () => {

@@ -1,13 +1,11 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Navigate, useLocation } from 'react-router-dom'
 import { useAuth } from '../Components/auth'
 
 const ProtectedRoutes = ({ children }) => {
-  const navigate = useNavigate()
+  const location = useLocation()
   const { user } = useAuth()
-  React.useEffect(() => {
-    if (!user?.username) return navigate('/login')
-  }, [])
+  if (!user?.username) return <Navigate to='/login' state={{ from: location }} replace />
 
   return children
 }

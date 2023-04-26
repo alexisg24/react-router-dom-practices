@@ -1,12 +1,15 @@
 import React from 'react'
 import { useAuth } from './auth'
+import { useLocation } from 'react-router-dom'
 
 const LoginPage = () => {
+  const location = useLocation()
+  const from = location.state?.from?.pathname || -1
   const auth = useAuth()
   const [username, setUserName] = React.useState('')
   const loginForm = (event) => {
     event.preventDefault()
-    auth.login({ username })
+    auth.login({ username, from })
   }
   return (
     <>
